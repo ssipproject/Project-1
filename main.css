@@ -133,7 +133,7 @@ form {
 
 .btn-primary {
     border-color: #7e0a08;
-    border-radius: .3em;
+    border-radius: 0;
     background-color: #fbf3d3;
     color: #7e0a08;
 }

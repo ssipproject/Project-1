@@ -70,7 +70,7 @@ form {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -289,4 +289,7 @@ form {
 }
 h3 {
     text-align: center;
+}
+.footer {
+    background-color: #ffefb0;
 }

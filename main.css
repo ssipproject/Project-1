@@ -9,6 +9,9 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    background-color: #fbf3d3;
+    font-family: 'Malgun Gothic';
+    font-weight: 300;
 }
 
 form {
@@ -75,12 +78,13 @@ form {
     margin: 0 auto;
     padding: 0 1.5em;
 }
+
 .section-header {
-    font-family: "Metal Mania";
-    font-weight: normal;
+    font-family: "Malgun Gothic";
     color: #333;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.0em;
+    font-weight: 200;
 }
 
 .about-shop-image {
@@ -128,15 +132,15 @@ form {
 }
 
 .btn-primary {
-    color: white;
-    background-color: #56CCF2;
-    border: none;
+    border-color: #7e0a08;
     border-radius: .3em;
-    font-weight: bold;
+    background-color: #fbf3d3;
+    color: #7e0a08;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    color: white;
+    background-color: #7e0a08;
 }
 
 .shop-item {
@@ -147,10 +151,10 @@ form {
     display: block;
     width: 100%;
     text-align: center;
-    font-weight: bold;
     font-size: 1.5em;
     color: #333;
     margin-bottom: 15px;
+    font-weight: 200;
 }
 
 .shop-item-image {
@@ -309,7 +313,7 @@ h3 {
   padding-top: 34px;
     padding-left: 41%;
   text-decoration: none;
-  font-size: 36px; 
+  font-size: 38px; 
   line-height: 25px;
   border-radius: 4px;
     font-family: 'Megrim';
@@ -345,5 +349,4 @@ li a:hover {
   background-color: #fbf3d3;
     color: #a91e23;
 }
-
 </style>

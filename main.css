@@ -159,6 +159,7 @@ form {
 
 .shop-item-image {
     height: 250px;
+    border-radius: 7%;
 }
 
 .shop-item-details {

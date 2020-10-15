@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="newmain.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
+        <title>madewithLuv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <div class="header">
+          <a href="index.php" class="logo">madewithLuv</a>
+        </div>
+        <div class="menucontainer">
+            <ul>
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#donation">Donations</a></li>
+            </ul>
+    </div>
+    
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;
+    
+    }
+.mySlides {display: none;}
+img {vertical-align: middle;
+    margin-top: 0.8%;
+    margin-bottom: 0%;
+    height: 600px;
+    
+    }
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 1opx;
+  padding: 0 8px;
+
+  
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.EmptyStateView1470909390--container {
+    padding: 120px 100px;
+    text-align: center;
+}
+.comp-kfrl81y9 .EmptyStateView1470909390--root {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+}
+.EmptyStateView1470909390--root {
+    border-style: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.redtext {
+	color: firebrick;
+}
+.browntext {
+    color: darksalmon;  
+}
+
+</style>
+<body>
+<div class="mySlides fade">
+  <img src="photos/slide1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="photos/slide3.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="photos/slide5.jpg" style="width:100%">
+  
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+    <div class="container">
+        <h1 class="font_4" style="text-align: center; line-height: 1.25em; font-size: 80px;"><span class="redtext">“Happiness is not in money, but in shopping.”</span></h1>
+        <h2  class="font_7" style="text-align: center; line-height: 1.25em; font-size: 20px; font-style: italic"><span class="color_15">your life style outfit</span></h2>
+        <p class="font_9" style="text-align:center; line-height:1.875em;"><span class="color_15">In 2020, we encountered an inspiring group of artisans and an idea was born: a way to combine our passion for fashion with a desire to help those in need. Today, madewithLuv continues to play a major role in the lives of indigenous artists, who are finding economic independence through the increasing popularity of their beautiful style. Also we are collaboration with UNICEF to <a href="donation.html">Open Donation</a> for COVID-19, as we can see all the people around the world are attacked by corona virus. The potential for superspreader events underscores the importance of physical distancing, including avoiding gathering in large groups, to control spread of COVID-19. Enhancing community awareness can encourage symptomatic persons and contacts of ill persons to isolate or self-quarantine to prevent ongoing transmission. So, let's help this world to againts COVID-19  </span></p>
+  <div class="column" style="padding-left: 20%">
+    <div class="card">
+      <img src="photos/mejiwoo6.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card"><img src="photos/bottom6.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+        <div class="column">
+    <div class="card">
+      <img src="photos/mejiwoo4.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+        <div class="column">
+    <div class="card">
+      <img src="photos/bottom5.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+    <div class="column" style="padding-left: 20%">
+    <div class="card">
+      <img src="photos/bottom4.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="photos/mejiwoo5.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+        <div class="column">
+    <div class="card">
+      <img src="photos/mejiwo7.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+        <div class="column">
+    <div class="card">
+      <img src="photos/bottom7.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+    <div class="column" style="padding-left: 20%">
+    <div class="card">
+      <img src="photos/bottom8.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card"><img src="photos/mejiwoo8.webp" style="width:100%; height: 350px">
+    </div>
+  </div>
+</div>
+    <br>
+    <br>
+    <div style="text-align: center">
+    <h2 style="text-align:center">------This is who we are------</h2>
+    </div>
+        
+<div class="row">
+  <div class="column">
+    <div class="card" style="box-shadow: 7px 4px 8px 0 firebrick; border-radius: 1%; margin: 8px;">
+      <img src="photos/nomi.JPG" alt="Naomi" style="width:100%; height: 250px">
+      <div class="container">
+        <h2 style="text-align: center" class="browntext">Naomi Irene Alexandra</h2>
+        <p class="title"></p>
+        <p style="text-align: center">Nomi, Project Manager</p>
+        <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank"><p style="text-align: center">naomirene.18@gmail.com</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="box-shadow: 7px 4px 8px 0 firebrick; border-radius: 1%; margin: 8px;">
+      <img src="photos/acaa.jpg" alt="Natasya" style="width:100%; height: 250px">
+      <div class="container">
+        <h2 style="text-align: center" class="browntext">Natasya Oktavioni Susanto</h2>
+        <p class="title"></p>
+        <p style="text-align: center">Aca, Owner</p>
+        <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank"><p style="text-align: center">natasya.susanto01@gmail.com</p></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" style="box-shadow: 7px 4px 8px 0 firebrick; border-radius: 1%; margin: 8px;">
+      <img src="photos/indhiraa.jpg" alt="Indhira" style="width:100%; height: 250px">
+      <div class="container">
+        <h2 style="text-align: center" class="browntext">Indhira Margareth Mandey</h2>
+        <p class="title"></p>
+        <p style="text-align: center">Indhi, Marketing Manager</p>
+        <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank"><p style="text-align: center">indhiramargareth02@gmail.com</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div data-hook="empty-state-wrapper" class="EmptyStateView1470909390--root"><div class="EmptyStateView1470909390--container"><span data-text2347419744-typography="smallTitle" class="Text2347419744--root"><a href="#cart">CHECK YOUR CHART HERE!</a></span></div></div>
+    <br>
+    </body>
+</html>

@@ -1,11 +1,40 @@
+<?php
+
+    try {
+        $db = new mysqli("127.0.0.1", "root", "", "newdonation");
+    }
+    catch (Exception $exc) {
+        echo $exc->getTraceAsString();
+    }
+    
+    if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['nominal'])) {
+    
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $nominal = $_POST['nominal'];
+
+    $db->query("INSERT INTO `donate`(`user_name`, `user_email`, `nominal`) VALUES ('$name', '$email', '$nominal')");
+    
+    }
+    
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="newmaintry.css"/>
+        <link rel="stylesheet" href="donate.css"/>
         <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
-        <title>madewithLuv</title>
+        <title>Donate for Kids</title>
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
     </head>
     <body>
         <div class="sticky">
@@ -17,7 +46,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="#cart">Cart</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a class="active" href="donationtry.html">Donations</a></li>
+                    <li><a class="active" href="donation.html">Donations</a></li>
                 </ul>
             </div>
         </div>
@@ -47,14 +76,15 @@
             </div>
             <div class="content">
                 <h3>Put your donation here!</h3>
-                <input type="text" id="name" placeholder="Name" Style="width: 150px; margin-right: 20px;">
-                <input type="Number" id="nominal" placeholder="Nominal" Style="width: 150px; margin-left: 10px;">
-                <input type="text" id="email" placeholder="Email" Style="width: 150px; margin-left: 20px; margin-right: 20px;">
-                <input type="text" id="card" placeholder="Credit Card" Style="width: 150px; margin-left: 5px;">
-                    <div class="popup" onclick="myFunction()">
-                        <button class="btn post" id="post" type="submit" style=" margin-left: 20px;" onclick="submit()">Donate</button>
-                        <span class="popuptext" id="myPopup">Thank you for your donation!</span>
-                    </div>
+                <form method="post" action="">
+                <input id="name" type="text" name="name" placeholder="Name" Style="width: 150px; margin-right: 5px;">
+                <input id="nominal" type="number" name="nominal" placeholder="Amount" Style="width: 150px; margin-left: 10px;">
+                <input id="email" type="text" name="email" placeholder="Email" Style="width: 150px; margin-left: 5px; margin-right: 5px;">
+                <div class="popup" onclick="myFunction()">
+                    <input type="submit" style=" margin-left: 20px;" value="Donate">
+                    <span class="popuptext" id="myPopup">Thank you for your donation, we will contact you through email!</span>
+                </div>
+                </form>
             </div>
         </center>
       <section id="outro">
@@ -77,22 +107,4 @@
         </div>
       </section>
     </body>
-     <script>
-        function submit(){
-                var a = new XMLHttpRequest();
-                var x = document.getElementById("success");
-                a.onreadystatechange = function(){
-                    if(this.readyState == 4 && this.status == 200){
-                        x.innerHTML = this.responseText;
-                    }
-                };
-                a.open("GET", "connect.php?name="+name.value+"&nominal="+nominal.value+"&email="+email.value+"&card="+card.value, true);
-                a.send();
-            }
-
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
-        </script>
 </html>

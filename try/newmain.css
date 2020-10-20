@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    font-family: Raleway;
-    color: #777;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -188,26 +182,30 @@ form {
 .cart-item-image {
     width: 75px;
     height: auto;
-    border-radius: 10px;
 }
 
 .btn-danger {
-    color: white;
-    background-color: #EB5757;
+    color: #7e0a08;
+    background-color:  #fbf3d3;
     border: none;
     border-radius: .3em;
-    font-weight: bold;
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    border-color: #7e0a08;
+    border-radius: 0;
+    color: white;
+    background-color: #7e0a08;
+}
+
+.cart-items {
+    justify-content: flex-end;
 }
 
 .cart-quantity-input {
     height: 34px;
     width: 50px;
-    border-radius: 5px;
-    border: 1px solid #56CCF2;
+    border: 1px solid #333;
     background-color: #eee;
     color: #333;
     padding: 0;

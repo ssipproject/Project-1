@@ -1,12 +1,14 @@
 //get data from table
-function submit() {
-    "use strict";
-    var a = new XMLHttpRequest();
-    a.open("GET", "data.php", true);
-    a.send();
+var ajax = new XMLHttpRequest();
+var method = "GET";
+var url = "./php/data.php";
+var asynchronous = true;
 
-    a.onreadystatechange = function () {
-    if (this.readyState === 4 && this.status === 200) {
+ajax.open(method, url, asynchronous);
+ajax.send();
+
+ajax.onreadystatechange = function() {
+    if(this.readyState == 4 && this.status == 200) {
         //converting JSON back to ARRAY
         let products = JSON.parse(this.responseText);
 
@@ -18,6 +20,7 @@ function submit() {
             }) 
         }
 
+        //----------- ADD ITEM ------------//
         function onLoadCartNumbers() {
             let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -74,10 +77,9 @@ function submit() {
             } else {
                 localStorage.setItem("totalCost", product.product_price);
             }
-            
-
         }
 
+        //---------- Display the item ---------------//
         function displayCart() {
             let cartItems = localStorage.getItem('productsincart');
             cartItems = JSON.parse(cartItems);
@@ -95,7 +97,7 @@ function submit() {
                     <span class="cart-price cart-column">Rp. ${item.product_price}</span>
                     <div class="cart-quantity cart-column">
                         <input class="cart-quantity-input" type="number" value="${item.incart}">
-                        <button class="btn btn-danger" type="button">REMOVE</button>
+                        <button id="removes" class="btn btn-danger" type="button">REMOVE</button>
                     </div>
                     `
                 });
@@ -107,11 +109,9 @@ function submit() {
                 </div>
                 `
             }
-            
         }
-
+       
         onLoadCartNumbers();
         displayCart();
     }
-}
 }

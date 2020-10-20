@@ -1,3 +1,6 @@
+* {	
+    box-sizing: border-box;			
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -201,10 +204,12 @@ div.sticky {
     font: 25px black;
 }
 
+
 .middle .outset {
     border: 2px solid #a91e23;
     border-style: outset;
     padding: 12px;
+    margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 5px 10px darkred;
 }

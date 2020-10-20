@@ -25,8 +25,8 @@ $database = new CreateDB("Productdb", "Product");
             <ul>
                 <li><a class="active" href="index.php"> Shop </a></li>
                 <li class="cart"><a href="cart.html">Cart <span>0</span></a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#donation">Donations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="3donation.php">Donations</a></li>
             </ul>
         </div>
         <section class="container content-section">

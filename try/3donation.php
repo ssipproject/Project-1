@@ -52,7 +52,7 @@
         </div>
         <br>
         <center>
-            <div class="middle" style="height: 950px; width: 950px; font-size: 20px;">   
+            <div class="middle" style="height: 1080px; width: 950px; font-size: 20px;">   
                 <h1 style="text-align: left;">MAKE <em style="color: orangered">A DIFFERENCE</em></h1>
                 <img src="./photos/unicef.jpg" alt="unicef" width="800px" height="350px">
                 <h3 style="float: left">

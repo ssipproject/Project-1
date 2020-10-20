@@ -11,7 +11,7 @@ $database = new CreateDB("Productdb", "Product");
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style2.css"/>
+        <link rel="stylesheet" href="newmain.css"/>
         <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">

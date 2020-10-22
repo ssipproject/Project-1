@@ -56,22 +56,23 @@
                 <h1 style="text-align: left;">MAKE <em style="color: orangered">A DIFFERENCE</em></h1>
                 <img src="./photos/unicef.jpg" alt="unicef" width="800px" height="350px">
                 <h3 style="float: left">
-                <strong>Selamatkan Masa Depan Anak #LawanCovid19 bersama UNICEF</strong>
+                <strong>Save The Future of Children with UNICEF #LawanCovid19!</strong>
                 </h3>
                 <br>
                 <br>
                 <br>
                 <br>
-                <p style="text-align: left;"> <em style="color:darkred">   MadewithLuv</em> bekerja sama dengan UNICEF Indonesia untuk memberikan donasi kepada Anak-anak Indonesia dalam melawan Covid. Mari bergabung bersama kami!
-                    Donasi Anda setiap bulan, seberapapun nilainya adalah pertolongan jangka panjang untuk Anak-anak Indonesia. Bergabung menjadi Pendekar Anak sekarang!
-                    Anda juga bisa memberikan satu kali donasi untuk tetap bisa menolong mereka.
+                <p style="text-align: justify;"> <em style="color:darkred">   MadewithLuv</em> 
+                    is working with UNICEF Indonesia to make donations to Indonesian children against Covid. Let's join us! Your donation every month, regardless of value, is a long-term help for Indonesian children. Join as a Child Warrior now! You can also make a one-time donation to keep helping them.
                 </p>
                 
                 <h4 class="outset" style="float: left; text-align: justify;">
-                Bagaimana donasi anda dapat menolong anak-anak dari Barat hingga Timur Indonesia:<br>
-                    - UNICEF Indonesia memberikan dukungan untuk persediaan obat gizi selama masa pandemi untuk anak-anak yang menderita gizi buruk.<br>
-                    - UNICEF Indonesia memfasilitasi 5000 layanan kesehatan untuk tetap dapat memberikan layanan imunisasi kepada anak-anak. Termasuk mengembangkan petunjuk teknis prosedur Imunisasi secara aman dari penularan Covid-19.<br>
-                    - UNICEF membantu Kemendikbud dalam pengembangan modul sekolah dari rumah termasuk persiapan modul online, televisi, radio, dan materi cetak.
+                How your donation can help children from West to Eastern Indonesia:<br>
+                    - UNICEF Indonesia is providing support for nutritional medicine supplies during the pandemic for children suffering from malnutrition.<br>
+                    - UNICEF Indonesia facilitates 5000 health services to continue to provide immunization services to children. Including developing technical instructions for safe immunization procedures from Covid-19 transmission.<br>
+                    - UNICEF assists the Ministry of Education and Culture in developing school modules from home including online module preparation, television, radio, and printed materials.
+                    <br>
+                
                 </h4>
             </div>
             <div class="content">

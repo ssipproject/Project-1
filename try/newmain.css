@@ -339,4 +339,10 @@ div.sticky {
     font: 20px white;
 }
 
+span.qty{
+    padding-right: 5%;
+    padding-left: 2%;
+    text-align: center;
+}
+
 
